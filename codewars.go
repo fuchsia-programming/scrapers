@@ -57,7 +57,5 @@ func main() {
 
 	// Start scraping on https://www.codewars.com
 	c.Visit(fmt.Sprintf(codewarsurl, "Beast"))
-
 	fmt.Println(record)
 }
-

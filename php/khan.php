@@ -13,7 +13,7 @@
         $url = "https://www.khanacademy.org/profile/$user/";
         $content = get_content($url);
         preg_match('/points":(\\d+),"prefersReducedMotion/', $content, $matches);
-        echo $matches[1].PHP_EOL;
+        return ($matches[1] ? $matches[1] : 'Not found').PHP_EOL;
     }
 
-    get_energy_points('XSLTGod');
+    echo get_energy_points('XSLTGod');
